@@ -1,11 +1,12 @@
 *{
 	margin: 0;
 	padding: 0;
-}
-
-body {
 	font-size: 16px;
 }
+
+/* body {
+	font-size: 16px;
+} */
 
 @font-face {
   font-family: 'Roboto', sans-serif;
@@ -76,6 +77,11 @@ body {
 	        align-items: flex-end;
 }
 
+.tags {
+	max-width: 19.688rem; 
+	margin-left: -4px;
+}
+
 .info{
 	font-family: 'Roboto', sans-serif;
 	font-size: 0.75rem;
@@ -83,4 +89,50 @@ body {
 	color: #ffffff;
 	line-height: 2.08;
 	text-align: right;
+}
+@media screen and (max-width: 1024px) {
+	*{
+		font-size: 14px;
+	}
+	.container {
+		min-height: 768px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	*{
+		font-size: 13px;
+	}
+	.container {
+		min-height: 42.75rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container{
+		padding: 2.313rem 2.313rem;
+	}
+	.top{
+		margin-top: 0;
+	}
+	.title {
+		font-size: 2.25rem;
+	}
+	.bottom {
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.all {
+		margin-top: 2rem;
+	}
+	.info{
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.tags {
+		margin-left: 0;
+	}
 }
