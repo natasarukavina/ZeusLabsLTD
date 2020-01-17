@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  src: url('./font/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'TTSupermolotNeue-Exp';
+  font-weight: 300;
+  src: url('./font/TT-Supermolot-Neue-Expanded-Bold.otf');
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	padding: 2.813rem 4.375rem;
+	box-sizing: border-box;
+	background-image: url('./images/back.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.top {
+	margin-top: -8.125rem;
+}
+
+.title {
+	font-family: 'TTSupermolotNeue-Exp';
+	font-size: 2.875rem;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 1.438rem;
+}
+
+.text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.56;
+	color: #ffffff;
+}
+
+.bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.info{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: #ffffff;
+	line-height: 2.08;
+	text-align: right;
+}
